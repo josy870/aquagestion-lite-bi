@@ -1,0 +1,23 @@
+services:
+  aqua-dw-pg:
+    image: postgres:16
+    container_name: aqua-dw-pg
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: aqua_dw
+      POSTGRES_USER: aqua
+      POSTGRES_PASSWORD: aqua1234
+    ports:
+      - "15432:5432"
+    volumes:
+      - aqua_dw_data:/var/lib/postgresql/data
+      - ./postgres/init:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U aqua -d aqua_dw"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  aqua_dw_data:
+    name: aqua_dw_data
