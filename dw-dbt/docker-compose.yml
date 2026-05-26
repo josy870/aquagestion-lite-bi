@@ -1,0 +1,30 @@
+# ============================================================
+#  AquaGestión Lite — dw-dbt
+#  dbt Core corriendo en Docker
+#  Transforma: raw → staging → dm
+# ============================================================
+#
+#  Comandos:
+#    Construir imagen:  docker compose build
+#    Correr modelos:    docker compose run --rm dbt dbt run
+#    Correr tests:      docker compose run --rm dbt dbt test
+#    Ver docs:          docker compose run --rm dbt dbt docs generate
+#
+#  REQUISITO: aqua-dw-pg debe estar corriendo (dw-pg)
+# ============================================================
+
+services:
+  dbt:
+    build: .
+    container_name: aqua-dbt
+    environment:
+      DBT_HOST:     host.docker.internal
+      DBT_PORT:     "15432"
+      DBT_DATABASE: aqua_dw
+      DBT_SCHEMA:   dm
+      DBT_USER:     aqua
+      DBT_PASSWORD: aqua1234
+    volumes:
+      - .:/usr/app
+    working_dir: /usr/app
+    network_mode: bridge

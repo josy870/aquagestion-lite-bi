@@ -1,0 +1,17 @@
+# ============================================================
+#  AquaGestión Lite — dbt Profiles
+#  Conexión al PostgreSQL DW (aqua-dw-pg en Docker)
+# ============================================================
+
+aqua_bi:
+  target: dev
+  outputs:
+    dev:
+      type:     postgres
+      host:     "{{ env_var('DBT_HOST', 'host.docker.internal') }}"
+      port:     "{{ env_var('DBT_PORT', '15432') | int }}"
+      database: "{{ env_var('DBT_DATABASE', 'aqua_dw') }}"
+      schema:   "{{ env_var('DBT_SCHEMA', 'dm') }}"
+      user:     "{{ env_var('DBT_USER', 'aqua') }}"
+      password: "{{ env_var('DBT_PASSWORD', 'aqua1234') }}"
+      threads:  4

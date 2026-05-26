@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    description: "Bronze layer — réplica cruda desde OLTP vía Airbyte"
+    schema: raw
+    tables:
+      - name: poza
+        description: "Réplica cruda de oltp.poza"
+      - name: lote
+        description: "Réplica cruda de oltp.lote"
+      - name: registro_diario
+        description: "Réplica cruda de oltp.registro_diario"

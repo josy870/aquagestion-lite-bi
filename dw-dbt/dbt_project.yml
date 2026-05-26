@@ -1,0 +1,31 @@
+# ============================================================
+#  AquaGestión Lite — dbt Project
+#  Pipeline: raw (Bronze) → staging (Silver) → dm (Gold)
+# ============================================================
+
+name: aqua_bi
+version: '1.0.0'
+config-version: 2
+
+profile: aqua_bi
+
+model-paths:   ["models"]
+test-paths:    ["tests"]
+seed-paths:    ["seeds"]
+macro-paths:   ["macros"]
+
+target-path:   "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  aqua_bi:
+
+    # Silver: limpieza y tipado desde raw
+    staging:
+      +schema:      staging
+      +materialized: view
+
+    # Gold: dimensiones y tabla de hechos para Power BI
+    marts:
+      +schema:      dm
+      +materialized: table

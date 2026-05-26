@@ -1,0 +1,1247 @@
+[0m06:47:34.431738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7125399f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7126104d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7126104610>]}
+
+
+============================== 06:47:34.442862 | 4859aa74-ca94-4fc2-b74d-b466cfd1f0e8 ==============================
+[0m06:47:34.442862 [info ] [MainThread]: Running with dbt=1.7.4
+[0m06:47:34.445939 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'debug': 'False', 'no_print': 'None', 'cache_selected_only': 'False', 'partial_parse': 'True', 'target_path': 'None', 'introspect': 'True', 'static_parser': 'True', 'profiles_dir': '/usr/app', 'quiet': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_cache_events': 'False', 'log_path': '/usr/app/logs', 'log_format': 'default', 'printer_width': '80', 'version_check': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug'}
+[0m06:47:34.451328 [info ] [MainThread]: dbt version: 1.7.4
+[0m06:47:34.454409 [info ] [MainThread]: python version: 3.11.15
+[0m06:47:34.457624 [info ] [MainThread]: python path: /usr/local/bin/python3.11
+[0m06:47:34.461336 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.41
+[0m06:47:34.612827 [info ] [MainThread]: Using profiles dir at /usr/app
+[0m06:47:34.615196 [info ] [MainThread]: Using profiles.yml file at /usr/app/profiles.yml
+[0m06:47:34.617611 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt_project.yml
+[0m06:47:34.620331 [info ] [MainThread]: adapter type: postgres
+[0m06:47:34.622577 [info ] [MainThread]: adapter version: 1.7.4
+[0m06:47:34.747015 [info ] [MainThread]: Configuration:
+[0m06:47:34.749597 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m06:47:34.752112 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m06:47:34.754448 [info ] [MainThread]: Required dependencies:
+[0m06:47:34.756882 [debug] [MainThread]: Executing "git --help"
+[0m06:47:34.760945 [info ] [MainThread]:  - git [[31mERROR[0m]
+
+[0m06:47:34.764111 [info ] [MainThread]: Connection:
+[0m06:47:34.767135 [info ] [MainThread]:   host: host.docker.internal
+[0m06:47:34.770157 [info ] [MainThread]:   port: 15432
+[0m06:47:34.772851 [info ] [MainThread]:   user: aqua
+[0m06:47:34.776342 [info ] [MainThread]:   database: aqua_dw
+[0m06:47:34.779440 [info ] [MainThread]:   schema: dm
+[0m06:47:34.782048 [info ] [MainThread]:   connect_timeout: 10
+[0m06:47:34.784706 [info ] [MainThread]:   role: None
+[0m06:47:34.787347 [info ] [MainThread]:   search_path: None
+[0m06:47:34.790138 [info ] [MainThread]:   keepalives_idle: 0
+[0m06:47:34.792909 [info ] [MainThread]:   sslmode: None
+[0m06:47:34.796131 [info ] [MainThread]:   sslcert: None
+[0m06:47:34.798866 [info ] [MainThread]:   sslkey: None
+[0m06:47:34.801622 [info ] [MainThread]:   sslrootcert: None
+[0m06:47:34.804674 [info ] [MainThread]:   application_name: dbt
+[0m06:47:34.807781 [info ] [MainThread]:   retries: 1
+[0m06:47:34.810817 [info ] [MainThread]: Registered adapter: postgres=1.7.4
+[0m06:47:34.813851 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m06:47:34.816461 [debug] [MainThread]: Using postgres connection "debug"
+[0m06:47:34.819045 [debug] [MainThread]: On debug: select 1 as id
+[0m06:47:34.821507 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:47:34.871914 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m06:47:34.877232 [debug] [MainThread]: On debug: Close
+[0m06:47:34.879776 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m06:47:34.882659 [info ] [MainThread]: [31m1 check failed:[0m
+[0m06:47:34.885440 [info ] [MainThread]: Error from git --help: Could not find command, ensure it is in the user's PATH: "git"
+
+[0m06:47:34.888805 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m06:47:34.891571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f712533ea10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f71251de410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7125e68710>]}
+[0m06:47:34.894020 [debug] [MainThread]: Flushing usage events
+[0m06:54:27.252146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15ac6cc6d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15ac637f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15ad9af2d0>]}
+
+
+============================== 06:54:27.262658 | 53f1b6d5-fe71-4982-ae6e-80aed85e4212 ==============================
+[0m06:54:27.262658 [info ] [MainThread]: Running with dbt=1.7.18
+[0m06:54:27.265440 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/usr/app/logs', 'version_check': 'True', 'profiles_dir': '/usr/app', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m06:54:27.269387 [info ] [MainThread]: dbt version: 1.7.18
+[0m06:54:27.271722 [info ] [MainThread]: python version: 3.11.15
+[0m06:54:27.274170 [info ] [MainThread]: python path: /usr/local/bin/python3.11
+[0m06:54:27.277154 [info ] [MainThread]: os info: Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.41
+[0m06:54:27.383999 [info ] [MainThread]: Using profiles dir at /usr/app
+[0m06:54:27.386714 [info ] [MainThread]: Using profiles.yml file at /usr/app/profiles.yml
+[0m06:54:27.389454 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt_project.yml
+[0m06:54:27.392378 [info ] [MainThread]: adapter type: postgres
+[0m06:54:27.395277 [info ] [MainThread]: adapter version: 1.7.18
+[0m06:54:27.518855 [info ] [MainThread]: Configuration:
+[0m06:54:27.521460 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m06:54:27.523778 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m06:54:27.526623 [info ] [MainThread]: Required dependencies:
+[0m06:54:27.529310 [debug] [MainThread]: Executing "git --help"
+[0m06:54:27.533928 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m06:54:27.536850 [debug] [MainThread]: STDERR: "b''"
+[0m06:54:27.538952 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m06:54:27.541235 [info ] [MainThread]: Connection:
+[0m06:54:27.544103 [info ] [MainThread]:   host: host.docker.internal
+[0m06:54:27.546625 [info ] [MainThread]:   port: 15432
+[0m06:54:27.550436 [info ] [MainThread]:   user: aqua
+[0m06:54:27.554541 [info ] [MainThread]:   database: aqua_dw
+[0m06:54:27.557705 [info ] [MainThread]:   schema: dm
+[0m06:54:27.560568 [info ] [MainThread]:   connect_timeout: 10
+[0m06:54:27.563120 [info ] [MainThread]:   role: None
+[0m06:54:27.565438 [info ] [MainThread]:   search_path: None
+[0m06:54:27.567808 [info ] [MainThread]:   keepalives_idle: 0
+[0m06:54:27.570011 [info ] [MainThread]:   sslmode: None
+[0m06:54:27.572258 [info ] [MainThread]:   sslcert: None
+[0m06:54:27.574943 [info ] [MainThread]:   sslkey: None
+[0m06:54:27.578053 [info ] [MainThread]:   sslrootcert: None
+[0m06:54:27.580447 [info ] [MainThread]:   application_name: dbt
+[0m06:54:27.582773 [info ] [MainThread]:   retries: 1
+[0m06:54:27.585100 [info ] [MainThread]: Registered adapter: postgres=1.7.18
+[0m06:54:27.587639 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m06:54:27.589787 [debug] [MainThread]: Using postgres connection "debug"
+[0m06:54:27.594683 [debug] [MainThread]: On debug: select 1 as id
+[0m06:54:27.597525 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:54:27.631558 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m06:54:27.635208 [debug] [MainThread]: On debug: Close
+[0m06:54:27.637758 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m06:54:27.640171 [info ] [MainThread]: [32mAll checks passed![0m
+[0m06:54:27.644789 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.48465517, "process_user_time": 3.120941, "process_kernel_time": 0.526783, "process_mem_max_rss": "117124", "process_out_blocks": "2960", "process_in_blocks": "0"}
+[0m06:54:27.647068 [debug] [MainThread]: Command `dbt debug` succeeded at 06:54:27.646854 after 0.49 seconds
+[0m06:54:27.649090 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m06:54:27.651158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15ac706a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15ab571650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f15acebb210>]}
+[0m06:54:27.653164 [debug] [MainThread]: Flushing usage events
+[0m06:54:58.151851 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86d65a290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86d5c3f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86da946d0>]}
+
+
+============================== 06:54:58.164702 | 1147fe06-ae74-450b-86b8-93c1a997a3a0 ==============================
+[0m06:54:58.164702 [info ] [MainThread]: Running with dbt=1.7.18
+[0m06:54:58.168214 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/usr/app/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m06:54:58.445482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86d671e90>]}
+[0m06:54:58.538798 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86d5c1050>]}
+[0m06:54:58.541922 [info ] [MainThread]: Registered adapter: postgres=1.7.18
+[0m06:54:58.561532 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m06:54:58.569411 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m06:54:58.572519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86d4fb590>]}
+[0m06:55:00.779298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86b531b10>]}
+[0m06:55:00.839578 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86b134090>]}
+[0m06:55:00.842249 [info ] [MainThread]: Found 8 models, 1 test, 3 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m06:55:00.845173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86b923850>]}
+[0m06:55:00.851459 [info ] [MainThread]: 
+[0m06:55:00.855256 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m06:55:00.885505 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aqua_dw'
+[0m06:55:00.888557 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aqua_dw'
+[0m06:55:00.907401 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw"
+[0m06:55:00.911609 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw"
+[0m06:55:00.914335 [debug] [ThreadPool]: On list_aqua_dw: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "list_aqua_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m06:55:00.917098 [debug] [ThreadPool]: On list_aqua_dw: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "list_aqua_dw"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m06:55:00.919498 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:55:00.921780 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:55:00.984272 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.0 seconds
+[0m06:55:00.984978 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.0 seconds
+[0m06:55:00.988398 [debug] [ThreadPool]: On list_aqua_dw: Close
+[0m06:55:00.992365 [debug] [ThreadPool]: On list_aqua_dw: Close
+[0m06:55:01.002888 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aqua_dw, now create_aqua_dw_dm_dm)
+[0m06:55:01.004561 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_aqua_dw, now create_aqua_dw_dm_staging)
+[0m06:55:01.006896 [debug] [ThreadPool]: Creating schema "database: "aqua_dw"
+schema: "dm_dm"
+"
+[0m06:55:01.010136 [debug] [ThreadPool]: Creating schema "database: "aqua_dw"
+schema: "dm_staging"
+"
+[0m06:55:01.021198 [debug] [ThreadPool]: Using postgres connection "create_aqua_dw_dm_dm"
+[0m06:55:01.025511 [debug] [ThreadPool]: Using postgres connection "create_aqua_dw_dm_staging"
+[0m06:55:01.028119 [debug] [ThreadPool]: On create_aqua_dw_dm_dm: BEGIN
+[0m06:55:01.030581 [debug] [ThreadPool]: On create_aqua_dw_dm_staging: BEGIN
+[0m06:55:01.033107 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:55:01.035449 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:55:01.068736 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.069952 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.071533 [debug] [ThreadPool]: Using postgres connection "create_aqua_dw_dm_dm"
+[0m06:55:01.074746 [debug] [ThreadPool]: Using postgres connection "create_aqua_dw_dm_staging"
+[0m06:55:01.077116 [debug] [ThreadPool]: On create_aqua_dw_dm_dm: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "create_aqua_dw_dm_dm"} */
+create schema if not exists "dm_dm"
+[0m06:55:01.079514 [debug] [ThreadPool]: On create_aqua_dw_dm_staging: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "create_aqua_dw_dm_staging"} */
+create schema if not exists "dm_staging"
+[0m06:55:01.091045 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m06:55:01.091556 [debug] [ThreadPool]: SQL status: CREATE SCHEMA in 0.0 seconds
+[0m06:55:01.093941 [debug] [ThreadPool]: On create_aqua_dw_dm_dm: COMMIT
+[0m06:55:01.097096 [debug] [ThreadPool]: On create_aqua_dw_dm_staging: COMMIT
+[0m06:55:01.099500 [debug] [ThreadPool]: Using postgres connection "create_aqua_dw_dm_dm"
+[0m06:55:01.101876 [debug] [ThreadPool]: Using postgres connection "create_aqua_dw_dm_staging"
+[0m06:55:01.104273 [debug] [ThreadPool]: On create_aqua_dw_dm_dm: COMMIT
+[0m06:55:01.107604 [debug] [ThreadPool]: On create_aqua_dw_dm_staging: COMMIT
+[0m06:55:01.116318 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:01.117023 [debug] [ThreadPool]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:01.118852 [debug] [ThreadPool]: On create_aqua_dw_dm_dm: Close
+[0m06:55:01.121154 [debug] [ThreadPool]: On create_aqua_dw_dm_staging: Close
+[0m06:55:01.130839 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_aqua_dw_dm_staging, now list_aqua_dw_dm_dm)
+[0m06:55:01.132499 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_aqua_dw_dm_dm, now list_aqua_dw_dm_staging)
+[0m06:55:01.144184 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_dm"
+[0m06:55:01.148847 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_staging"
+[0m06:55:01.151860 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: BEGIN
+[0m06:55:01.154182 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: BEGIN
+[0m06:55:01.156413 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:55:01.158846 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m06:55:01.190548 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.191558 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.193070 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_dm"
+[0m06:55:01.195535 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_staging"
+[0m06:55:01.197725 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "list_aqua_dw_dm_dm"} */
+select
+      'aqua_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dm_dm'
+    union all
+    select
+      'aqua_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dm_dm'
+    union all
+    select
+      'aqua_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dm_dm'
+  
+[0m06:55:01.200079 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "list_aqua_dw_dm_staging"} */
+select
+      'aqua_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dm_staging'
+    union all
+    select
+      'aqua_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dm_staging'
+    union all
+    select
+      'aqua_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dm_staging'
+  
+[0m06:55:01.229862 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m06:55:01.230518 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m06:55:01.233484 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: ROLLBACK
+[0m06:55:01.237152 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: ROLLBACK
+[0m06:55:01.241819 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: Close
+[0m06:55:01.243625 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: Close
+[0m06:55:01.254888 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:01.257349 [debug] [MainThread]: On master: BEGIN
+[0m06:55:01.259762 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:55:01.290274 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.292641 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:01.295076 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m06:55:01.316350 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m06:55:01.320831 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86c1c2610>]}
+[0m06:55:01.323384 [debug] [MainThread]: On master: ROLLBACK
+[0m06:55:01.328332 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:01.330784 [debug] [MainThread]: On master: BEGIN
+[0m06:55:01.337576 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.340174 [debug] [MainThread]: On master: COMMIT
+[0m06:55:01.342423 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:01.344558 [debug] [MainThread]: On master: COMMIT
+[0m06:55:01.349763 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:01.352187 [debug] [MainThread]: On master: Close
+[0m06:55:01.355452 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m06:55:01.358561 [info ] [MainThread]: 
+[0m06:55:01.379614 [debug] [Thread-1 (]: Began running node model.aqua_bi.dim_condicion
+[0m06:55:01.380368 [debug] [Thread-2 (]: Began running node model.aqua_bi.dim_tiempo
+[0m06:55:01.381106 [debug] [Thread-3 (]: Began running node model.aqua_bi.stg_lote
+[0m06:55:01.381737 [debug] [Thread-4 (]: Began running node model.aqua_bi.stg_poza
+[0m06:55:01.383392 [info ] [Thread-1 (]: 1 of 8 START sql table model dm_dm.dim_condicion ............................... [RUN]
+[0m06:55:01.386312 [info ] [Thread-2 (]: 2 of 8 START sql table model dm_dm.dim_tiempo .................................. [RUN]
+[0m06:55:01.389039 [info ] [Thread-3 (]: 3 of 8 START sql view model dm_staging.stg_lote ................................ [RUN]
+[0m06:55:01.391937 [info ] [Thread-4 (]: 4 of 8 START sql view model dm_staging.stg_poza ................................ [RUN]
+[0m06:55:01.395847 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aqua_dw_dm_staging, now model.aqua_bi.dim_condicion)
+[0m06:55:01.398831 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_aqua_dw_dm_dm, now model.aqua_bi.dim_tiempo)
+[0m06:55:01.401922 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.aqua_bi.stg_lote'
+[0m06:55:01.404887 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.aqua_bi.stg_poza'
+[0m06:55:01.407359 [debug] [Thread-1 (]: Began compiling node model.aqua_bi.dim_condicion
+[0m06:55:01.410668 [debug] [Thread-2 (]: Began compiling node model.aqua_bi.dim_tiempo
+[0m06:55:01.413434 [debug] [Thread-3 (]: Began compiling node model.aqua_bi.stg_lote
+[0m06:55:01.415757 [debug] [Thread-4 (]: Began compiling node model.aqua_bi.stg_poza
+[0m06:55:01.427679 [debug] [Thread-1 (]: Writing injected SQL for node "model.aqua_bi.dim_condicion"
+[0m06:55:01.431653 [debug] [Thread-2 (]: Writing injected SQL for node "model.aqua_bi.dim_tiempo"
+[0m06:55:01.437690 [debug] [Thread-3 (]: Writing injected SQL for node "model.aqua_bi.stg_lote"
+[0m06:55:01.444163 [debug] [Thread-4 (]: Writing injected SQL for node "model.aqua_bi.stg_poza"
+[0m06:55:01.473777 [debug] [Thread-1 (]: Timing info for model.aqua_bi.dim_condicion (compile): 06:55:01.418068 => 06:55:01.473367
+[0m06:55:01.476410 [debug] [Thread-1 (]: Began executing node model.aqua_bi.dim_condicion
+[0m06:55:01.477237 [debug] [Thread-2 (]: Timing info for model.aqua_bi.dim_tiempo (compile): 06:55:01.429165 => 06:55:01.476793
+[0m06:55:01.478021 [debug] [Thread-4 (]: Timing info for model.aqua_bi.stg_poza (compile): 06:55:01.440266 => 06:55:01.477650
+[0m06:55:01.490571 [debug] [Thread-3 (]: Timing info for model.aqua_bi.stg_lote (compile): 06:55:01.434079 => 06:55:01.490175
+[0m06:55:01.512768 [debug] [Thread-2 (]: Began executing node model.aqua_bi.dim_tiempo
+[0m06:55:01.539852 [debug] [Thread-1 (]: Writing runtime sql for node "model.aqua_bi.dim_condicion"
+[0m06:55:01.540485 [debug] [Thread-4 (]: Began executing node model.aqua_bi.stg_poza
+[0m06:55:01.542962 [debug] [Thread-3 (]: Began executing node model.aqua_bi.stg_lote
+[0m06:55:01.552188 [debug] [Thread-2 (]: Writing runtime sql for node "model.aqua_bi.dim_tiempo"
+[0m06:55:01.597098 [debug] [Thread-4 (]: Writing runtime sql for node "model.aqua_bi.stg_poza"
+[0m06:55:01.601321 [debug] [Thread-3 (]: Writing runtime sql for node "model.aqua_bi.stg_lote"
+[0m06:55:01.613785 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_condicion"
+[0m06:55:01.616514 [debug] [Thread-1 (]: On model.aqua_bi.dim_condicion: BEGIN
+[0m06:55:01.617377 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_tiempo"
+[0m06:55:01.618081 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.stg_poza"
+[0m06:55:01.619711 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:01.622134 [debug] [Thread-2 (]: On model.aqua_bi.dim_tiempo: BEGIN
+[0m06:55:01.622889 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_lote"
+[0m06:55:01.624749 [debug] [Thread-4 (]: On model.aqua_bi.stg_poza: BEGIN
+[0m06:55:01.629519 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:55:01.632385 [debug] [Thread-3 (]: On model.aqua_bi.stg_lote: BEGIN
+[0m06:55:01.634997 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m06:55:01.649971 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m06:55:01.685504 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.688884 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.689984 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_condicion"
+[0m06:55:01.693866 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_tiempo"
+[0m06:55:01.696837 [debug] [Thread-1 (]: On model.aqua_bi.dim_condicion: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_condicion"} */
+
+  
+    
+
+  create  table "aqua_dw"."dm_dm"."dim_condicion__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- ============================================================
+--  dm.dim_condicion
+--  Dimensión condición ambiental por temperatura
+--  Valores fijos basados en rangos del Lago Titicaca
+--  No depende de staging — se genera directamente aquí
+-- ============================================================
+
+WITH condiciones AS (
+
+    SELECT *
+    FROM (VALUES
+        (1, '< 10°C',   -99.00::NUMERIC,  9.99::NUMERIC,  'Crítico',  '#C00000', 'Temperatura muy baja. Alta mortalidad. Peces en estrés severo.'),
+        (2, '10–12°C',   10.00::NUMERIC, 11.99::NUMERIC,  'Bajo',     '#FF9900', 'Por debajo del rango óptimo. Crecimiento lento.'),
+        (3, '12–14°C',   12.00::NUMERIC, 13.99::NUMERIC,  'Óptimo',   '#00B050', 'Rango óptimo para trucha arcoíris en el Titicaca.'),
+        (4, '14–16°C',   14.00::NUMERIC, 15.99::NUMERIC,  'Alto',     '#FFFF00', 'Límite superior tolerable. Monitorear oxígeno.'),
+        (5, '> 16°C',    16.00::NUMERIC, 99.99::NUMERIC,  'Muy Alto', '#C00000', 'Temperatura crítica alta. Riesgo de floraciones algales.')
+    ) AS t(sk_condicion, rango_temperatura, temp_min, temp_max, estado, color_semaforo, descripcion)
+
+)
+
+SELECT
+    sk_condicion,
+    rango_temperatura,
+    temp_min,
+    temp_max,
+    estado,
+    color_semaforo,
+    descripcion
+FROM condiciones
+  );
+  
+[0m06:55:01.700304 [debug] [Thread-2 (]: On model.aqua_bi.dim_tiempo: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_tiempo"} */
+
+  
+    
+
+  create  table "aqua_dw"."dm_dm"."dim_tiempo__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- ============================================================
+--  dm.dim_tiempo
+--  Dimensión calendario — generada por dbt con generate_series
+--  Cubre: Ene–Jun 2025
+-- ============================================================
+
+WITH fechas AS (
+
+    SELECT
+        generate_series(
+            '2025-01-01'::DATE,
+            '2025-06-30'::DATE,
+            '1 day'::INTERVAL
+        )::DATE AS fecha
+
+),
+
+calendario AS (
+
+    SELECT
+        TO_CHAR(fecha, 'YYYYMMDD')                                          AS sk_fecha,
+        fecha,
+        EXTRACT(DAY     FROM fecha)::SMALLINT                               AS dia,
+        TO_CHAR(fecha, 'TMDay')                                             AS nombre_dia,
+        EXTRACT(DOW     FROM fecha) IN (0, 6)                               AS es_fin_semana,
+        EXTRACT(WEEK    FROM fecha)::SMALLINT                               AS semana_iso,
+        EXTRACT(MONTH   FROM fecha)::SMALLINT                               AS mes,
+        TO_CHAR(fecha, 'TMMonth')                                           AS nombre_mes,
+        EXTRACT(QUARTER FROM fecha)::SMALLINT                               AS trimestre,
+        'Q' || EXTRACT(QUARTER FROM fecha)::TEXT                            AS nombre_trimestre,
+        CASE WHEN EXTRACT(MONTH FROM fecha) <= 6 THEN 1 ELSE 2
+        END::SMALLINT                                                       AS semestre,
+        EXTRACT(YEAR    FROM fecha)::SMALLINT                               AS anio,
+        -- Feriados nacionales peruanos Ene–Jun 2025
+        fecha IN (
+            '2025-01-01',
+            '2025-04-17',
+            '2025-04-18',
+            '2025-05-01',
+            '2025-06-07'
+        )                                                                   AS es_feriado,
+        CASE fecha
+            WHEN '2025-01-01' THEN 'Año Nuevo'
+            WHEN '2025-04-17' THEN 'Jueves Santo'
+            WHEN '2025-04-18' THEN 'Viernes Santo'
+            WHEN '2025-05-01' THEN 'Día del Trabajo'
+            WHEN '2025-06-07' THEN 'Batalla de Arica'
+            ELSE NULL
+        END                                                                 AS nombre_feriado
+    FROM fechas
+
+)
+
+SELECT * FROM calendario
+  );
+  
+[0m06:55:01.708866 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.711895 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.stg_poza"
+[0m06:55:01.713386 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:01.715307 [debug] [Thread-4 (]: On model.aqua_bi.stg_poza: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.stg_poza"} */
+
+  create view "aqua_dw"."dm_staging"."stg_poza__dbt_tmp"
+    
+    
+  as (
+    -- ============================================================
+--  staging.stg_poza
+--  Limpieza y tipado de pozas desde raw
+--  Fuente: raw.poza (réplica de oltp.poza vía Airbyte)
+--          o directamente oltp.poza vía FDW
+-- ============================================================
+
+WITH fuente AS (
+
+    -- Airbyte replica en JSONB, extraemos cada campo
+    SELECT
+        _airbyte_data->>'id_poza'      AS id_poza,
+        _airbyte_data->>'nombre_poza'  AS nombre_poza,
+        _airbyte_data->>'sector'       AS sector,
+        _airbyte_data->>'capacidad_m3' AS capacidad_m3_raw,
+        _airbyte_data->>'estado'       AS estado,
+        _airbyte_emitted_at            AS cargado_en
+    FROM "aqua_dw"."raw"."poza"
+
+),
+
+limpieza AS (
+
+    SELECT
+        id_poza,
+        TRIM(nombre_poza)                           AS nombre_poza,
+        TRIM(sector)                                AS sector,
+        'AquaGestión Puno'                          AS granja,
+        CAST(capacidad_m3_raw AS NUMERIC(8,2))      AS capacidad_m3,
+        COALESCE(estado, 'Activa')                  AS estado,
+        cargado_en
+    FROM fuente
+    WHERE id_poza IS NOT NULL
+      AND nombre_poza IS NOT NULL
+
+)
+
+SELECT * FROM limpieza
+  );
+[0m06:55:01.718334 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_lote"
+[0m06:55:01.723468 [debug] [Thread-3 (]: On model.aqua_bi.stg_lote: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.stg_lote"} */
+
+  create view "aqua_dw"."dm_staging"."stg_lote__dbt_tmp"
+    
+    
+  as (
+    -- ============================================================
+--  staging.stg_lote
+--  Limpieza y tipado de lotes desde raw
+--  Fuente: raw.lote (réplica de oltp.lote vía Airbyte)
+-- ============================================================
+
+WITH fuente AS (
+
+    SELECT
+        _airbyte_data->>'id_lote'           AS id_lote,
+        _airbyte_data->>'nombre_lote'       AS nombre_lote,
+        _airbyte_data->>'id_poza'           AS id_poza,
+        _airbyte_data->>'especie'           AS especie,
+        _airbyte_data->>'etapa'             AS etapa,
+        _airbyte_data->>'fecha_ingreso'     AS fecha_ingreso_raw,
+        _airbyte_data->>'poblacion_inicial' AS poblacion_inicial_raw,
+        _airbyte_data->>'proveedor'         AS proveedor,
+        _airbyte_emitted_at                 AS cargado_en
+    FROM "aqua_dw"."raw"."lote"
+
+),
+
+limpieza AS (
+
+    SELECT
+        id_lote,
+        TRIM(nombre_lote)                               AS nombre_lote,
+        id_poza,
+        COALESCE(TRIM(especie), 'Trucha Arcoíris')      AS especie,
+        TRIM(etapa)                                     AS etapa,
+        CAST(fecha_ingreso_raw AS DATE)                 AS fecha_ingreso,
+        CAST(poblacion_inicial_raw AS INT)              AS poblacion_inicial,
+        TRIM(proveedor)                                 AS proveedor,
+        cargado_en
+    FROM fuente
+    WHERE id_lote IS NOT NULL
+      AND poblacion_inicial_raw IS NOT NULL
+      AND CAST(poblacion_inicial_raw AS INT) > 0
+
+)
+
+SELECT * FROM limpieza
+  );
+[0m06:55:01.730741 [debug] [Thread-1 (]: SQL status: SELECT 5 in 0.0 seconds
+[0m06:55:01.740408 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m06:55:01.741091 [debug] [Thread-2 (]: SQL status: SELECT 181 in 0.0 seconds
+[0m06:55:01.745444 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_condicion"
+[0m06:55:01.746050 [debug] [Thread-4 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m06:55:01.751500 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_lote"
+[0m06:55:01.757488 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_tiempo"
+[0m06:55:01.760071 [debug] [Thread-1 (]: On model.aqua_bi.dim_condicion: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_condicion"} */
+alter table "aqua_dw"."dm_dm"."dim_condicion__dbt_tmp" rename to "dim_condicion"
+[0m06:55:01.767557 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.stg_poza"
+[0m06:55:01.769568 [debug] [Thread-3 (]: On model.aqua_bi.stg_lote: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.stg_lote"} */
+alter table "aqua_dw"."dm_staging"."stg_lote__dbt_tmp" rename to "stg_lote"
+[0m06:55:01.771680 [debug] [Thread-2 (]: On model.aqua_bi.dim_tiempo: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_tiempo"} */
+alter table "aqua_dw"."dm_dm"."dim_tiempo__dbt_tmp" rename to "dim_tiempo"
+[0m06:55:01.775819 [debug] [Thread-4 (]: On model.aqua_bi.stg_poza: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.stg_poza"} */
+alter table "aqua_dw"."dm_staging"."stg_poza__dbt_tmp" rename to "stg_poza"
+[0m06:55:01.777150 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m06:55:01.781513 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m06:55:01.783730 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m06:55:01.790685 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m06:55:01.820781 [debug] [Thread-3 (]: On model.aqua_bi.stg_lote: COMMIT
+[0m06:55:01.821770 [debug] [Thread-1 (]: On model.aqua_bi.dim_condicion: COMMIT
+[0m06:55:01.828844 [debug] [Thread-2 (]: On model.aqua_bi.dim_tiempo: COMMIT
+[0m06:55:01.833194 [debug] [Thread-4 (]: On model.aqua_bi.stg_poza: COMMIT
+[0m06:55:01.835655 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_lote"
+[0m06:55:01.838405 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_condicion"
+[0m06:55:01.840565 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_tiempo"
+[0m06:55:01.843224 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.stg_poza"
+[0m06:55:01.845399 [debug] [Thread-3 (]: On model.aqua_bi.stg_lote: COMMIT
+[0m06:55:01.847611 [debug] [Thread-1 (]: On model.aqua_bi.dim_condicion: COMMIT
+[0m06:55:01.849677 [debug] [Thread-2 (]: On model.aqua_bi.dim_tiempo: COMMIT
+[0m06:55:01.851654 [debug] [Thread-4 (]: On model.aqua_bi.stg_poza: COMMIT
+[0m06:55:01.857650 [debug] [Thread-3 (]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:01.859133 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:01.861895 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:01.868837 [debug] [Thread-4 (]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:01.875508 [debug] [Thread-3 (]: Applying DROP to: "aqua_dw"."dm_staging"."stg_lote__dbt_backup"
+[0m06:55:01.880350 [debug] [Thread-1 (]: Applying DROP to: "aqua_dw"."dm_dm"."dim_condicion__dbt_backup"
+[0m06:55:01.885796 [debug] [Thread-2 (]: Applying DROP to: "aqua_dw"."dm_dm"."dim_tiempo__dbt_backup"
+[0m06:55:01.892029 [debug] [Thread-4 (]: Applying DROP to: "aqua_dw"."dm_staging"."stg_poza__dbt_backup"
+[0m06:55:01.904531 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_lote"
+[0m06:55:01.910750 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_condicion"
+[0m06:55:01.913478 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_tiempo"
+[0m06:55:01.916303 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.stg_poza"
+[0m06:55:01.918260 [debug] [Thread-3 (]: On model.aqua_bi.stg_lote: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.stg_lote"} */
+drop view if exists "aqua_dw"."dm_staging"."stg_lote__dbt_backup" cascade
+[0m06:55:01.920558 [debug] [Thread-1 (]: On model.aqua_bi.dim_condicion: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_condicion"} */
+drop table if exists "aqua_dw"."dm_dm"."dim_condicion__dbt_backup" cascade
+[0m06:55:01.922835 [debug] [Thread-2 (]: On model.aqua_bi.dim_tiempo: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_tiempo"} */
+drop table if exists "aqua_dw"."dm_dm"."dim_tiempo__dbt_backup" cascade
+[0m06:55:01.924898 [debug] [Thread-4 (]: On model.aqua_bi.stg_poza: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.stg_poza"} */
+drop view if exists "aqua_dw"."dm_staging"."stg_poza__dbt_backup" cascade
+[0m06:55:01.929916 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m06:55:01.930900 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m06:55:01.933765 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m06:55:01.937071 [debug] [Thread-3 (]: Timing info for model.aqua_bi.stg_lote (execute): 06:55:01.589262 => 06:55:01.936792
+[0m06:55:01.937641 [debug] [Thread-4 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m06:55:01.940708 [debug] [Thread-1 (]: Timing info for model.aqua_bi.dim_condicion (execute): 06:55:01.479557 => 06:55:01.940399
+[0m06:55:01.944374 [debug] [Thread-2 (]: Timing info for model.aqua_bi.dim_tiempo (execute): 06:55:01.545050 => 06:55:01.944084
+[0m06:55:01.946419 [debug] [Thread-3 (]: On model.aqua_bi.stg_lote: Close
+[0m06:55:01.950134 [debug] [Thread-4 (]: Timing info for model.aqua_bi.stg_poza (execute): 06:55:01.555514 => 06:55:01.949867
+[0m06:55:01.952585 [debug] [Thread-1 (]: On model.aqua_bi.dim_condicion: Close
+[0m06:55:01.954696 [debug] [Thread-2 (]: On model.aqua_bi.dim_tiempo: Close
+[0m06:55:01.957754 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86b1a6b50>]}
+[0m06:55:01.959476 [debug] [Thread-4 (]: On model.aqua_bi.stg_poza: Close
+[0m06:55:01.962976 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86b911c90>]}
+[0m06:55:01.965475 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86b90d010>]}
+[0m06:55:01.967535 [info ] [Thread-3 (]: 3 of 8 OK created sql view model dm_staging.stg_lote ........................... [[32mCREATE VIEW[0m in 0.56s]
+[0m06:55:01.971284 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86c1c0990>]}
+[0m06:55:01.973465 [info ] [Thread-1 (]: 1 of 8 OK created sql table model dm_dm.dim_condicion .......................... [[32mSELECT 5[0m in 0.57s]
+[0m06:55:01.976794 [info ] [Thread-2 (]: 2 of 8 OK created sql table model dm_dm.dim_tiempo ............................. [[32mSELECT 181[0m in 0.57s]
+[0m06:55:01.980169 [debug] [Thread-3 (]: Finished running node model.aqua_bi.stg_lote
+[0m06:55:01.982918 [info ] [Thread-4 (]: 4 of 8 OK created sql view model dm_staging.stg_poza ........................... [[32mCREATE VIEW[0m in 0.57s]
+[0m06:55:01.985854 [debug] [Thread-1 (]: Finished running node model.aqua_bi.dim_condicion
+[0m06:55:01.988393 [debug] [Thread-2 (]: Finished running node model.aqua_bi.dim_tiempo
+[0m06:55:01.990840 [debug] [Thread-3 (]: Began running node model.aqua_bi.stg_registro_diario
+[0m06:55:01.993526 [debug] [Thread-4 (]: Finished running node model.aqua_bi.stg_poza
+[0m06:55:01.996517 [debug] [Thread-1 (]: Began running node model.aqua_bi.dim_lote
+[0m06:55:02.001228 [info ] [Thread-3 (]: 5 of 8 START sql view model dm_staging.stg_registro_diario ..................... [RUN]
+[0m06:55:02.004326 [debug] [Thread-2 (]: Began running node model.aqua_bi.dim_poza
+[0m06:55:02.006138 [info ] [Thread-1 (]: 6 of 8 START sql table model dm_dm.dim_lote .................................... [RUN]
+[0m06:55:02.009031 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.aqua_bi.stg_lote, now model.aqua_bi.stg_registro_diario)
+[0m06:55:02.011785 [info ] [Thread-2 (]: 7 of 8 START sql table model dm_dm.dim_poza .................................... [RUN]
+[0m06:55:02.015106 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.aqua_bi.dim_condicion, now model.aqua_bi.dim_lote)
+[0m06:55:02.017369 [debug] [Thread-3 (]: Began compiling node model.aqua_bi.stg_registro_diario
+[0m06:55:02.020011 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.aqua_bi.dim_tiempo, now model.aqua_bi.dim_poza)
+[0m06:55:02.022430 [debug] [Thread-1 (]: Began compiling node model.aqua_bi.dim_lote
+[0m06:55:02.028770 [debug] [Thread-3 (]: Writing injected SQL for node "model.aqua_bi.stg_registro_diario"
+[0m06:55:02.031416 [debug] [Thread-2 (]: Began compiling node model.aqua_bi.dim_poza
+[0m06:55:02.040331 [debug] [Thread-1 (]: Writing injected SQL for node "model.aqua_bi.dim_lote"
+[0m06:55:02.048769 [debug] [Thread-2 (]: Writing injected SQL for node "model.aqua_bi.dim_poza"
+[0m06:55:02.057986 [debug] [Thread-3 (]: Timing info for model.aqua_bi.stg_registro_diario (compile): 06:55:02.024358 => 06:55:02.057570
+[0m06:55:02.059871 [debug] [Thread-2 (]: Timing info for model.aqua_bi.dim_poza (compile): 06:55:02.043481 => 06:55:02.059313
+[0m06:55:02.061255 [debug] [Thread-3 (]: Began executing node model.aqua_bi.stg_registro_diario
+[0m06:55:02.063795 [debug] [Thread-2 (]: Began executing node model.aqua_bi.dim_poza
+[0m06:55:02.065159 [debug] [Thread-1 (]: Timing info for model.aqua_bi.dim_lote (compile): 06:55:02.033389 => 06:55:02.064663
+[0m06:55:02.072636 [debug] [Thread-3 (]: Writing runtime sql for node "model.aqua_bi.stg_registro_diario"
+[0m06:55:02.080758 [debug] [Thread-2 (]: Writing runtime sql for node "model.aqua_bi.dim_poza"
+[0m06:55:02.082525 [debug] [Thread-1 (]: Began executing node model.aqua_bi.dim_lote
+[0m06:55:02.095928 [debug] [Thread-1 (]: Writing runtime sql for node "model.aqua_bi.dim_lote"
+[0m06:55:02.103510 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_registro_diario"
+[0m06:55:02.104099 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_poza"
+[0m06:55:02.106300 [debug] [Thread-3 (]: On model.aqua_bi.stg_registro_diario: BEGIN
+[0m06:55:02.107690 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_lote"
+[0m06:55:02.109455 [debug] [Thread-2 (]: On model.aqua_bi.dim_poza: BEGIN
+[0m06:55:02.111697 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m06:55:02.113794 [debug] [Thread-1 (]: On model.aqua_bi.dim_lote: BEGIN
+[0m06:55:02.116030 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m06:55:02.123359 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:02.149950 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:02.152359 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_registro_diario"
+[0m06:55:02.155183 [debug] [Thread-3 (]: On model.aqua_bi.stg_registro_diario: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.stg_registro_diario"} */
+
+  create view "aqua_dw"."dm_staging"."stg_registro_diario__dbt_tmp"
+    
+    
+  as (
+    -- ============================================================
+--  staging.stg_registro_diario
+--  Limpieza y tipado del registro diario desde raw
+--  Fuente: raw.registro_diario
+-- ============================================================
+
+WITH fuente AS (
+
+    SELECT
+        _airbyte_data->>'id_registro'    AS id_registro_raw,
+        _airbyte_data->>'fecha'          AS fecha_raw,
+        _airbyte_data->>'id_poza'        AS id_poza,
+        _airbyte_data->>'id_lote'        AS id_lote,
+        _airbyte_data->>'kg_alimento'    AS kg_alimento_raw,
+        _airbyte_data->>'cantidad_bajas' AS cantidad_bajas_raw,
+        _airbyte_data->>'temp_promedio'  AS temp_promedio_raw,
+        _airbyte_data->>'observaciones'  AS observaciones,
+        _airbyte_emitted_at              AS cargado_en
+    FROM "aqua_dw"."raw"."registro_diario"
+
+),
+
+limpieza AS (
+
+    SELECT
+        CAST(id_registro_raw AS BIGINT)         AS id_registro,
+        CAST(fecha_raw AS DATE)                 AS fecha,
+        id_poza,
+        id_lote,
+        CAST(kg_alimento_raw AS NUMERIC(10,3))  AS kg_alimento,
+        CAST(cantidad_bajas_raw AS INT)          AS cantidad_bajas,
+        CASE
+            WHEN temp_promedio_raw IS NOT NULL
+            THEN CAST(temp_promedio_raw AS NUMERIC(5,2))
+            ELSE NULL
+        END                                     AS temp_promedio,
+        observaciones,
+        -- Clasificar condición ambiental directamente en staging
+        CASE
+            WHEN CAST(temp_promedio_raw AS NUMERIC(5,2)) < 10   THEN 'Crítico'
+            WHEN CAST(temp_promedio_raw AS NUMERIC(5,2)) < 12   THEN 'Bajo'
+            WHEN CAST(temp_promedio_raw AS NUMERIC(5,2)) < 14   THEN 'Óptimo'
+            WHEN CAST(temp_promedio_raw AS NUMERIC(5,2)) < 16   THEN 'Alto'
+            WHEN CAST(temp_promedio_raw AS NUMERIC(5,2)) >= 16  THEN 'Muy Alto'
+            ELSE NULL
+        END                                     AS condicion_termica,
+        cargado_en
+    FROM fuente
+    WHERE fecha_raw IS NOT NULL
+      AND id_poza IS NOT NULL
+      AND id_lote IS NOT NULL
+      AND CAST(kg_alimento_raw AS NUMERIC(10,3)) >= 0
+      AND CAST(cantidad_bajas_raw AS INT) >= 0
+
+)
+
+SELECT * FROM limpieza
+  );
+[0m06:55:02.156116 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:02.156690 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:02.160083 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_poza"
+[0m06:55:02.162752 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_lote"
+[0m06:55:02.165056 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m06:55:02.165671 [debug] [Thread-2 (]: On model.aqua_bi.dim_poza: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_poza"} */
+
+  
+    
+
+  create  table "aqua_dw"."dm_dm"."dim_poza__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- ============================================================
+--  dm.dim_poza
+--  Dimensión de pozas de crianza
+--  Fuente: staging.stg_poza
+--  SCD Tipo 1: sobrescribe cambios
+-- ============================================================
+
+WITH stg AS (
+    SELECT * FROM "aqua_dw"."dm_staging"."stg_poza"
+)
+
+SELECT
+    ROW_NUMBER() OVER (ORDER BY id_poza)    AS sk_poza,
+    id_poza,
+    nombre_poza,
+    sector,
+    granja,
+    capacidad_m3,
+    estado
+FROM stg
+  );
+  
+[0m06:55:02.168149 [debug] [Thread-1 (]: On model.aqua_bi.dim_lote: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_lote"} */
+
+  
+    
+
+  create  table "aqua_dw"."dm_dm"."dim_lote__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- ============================================================
+--  dm.dim_lote
+--  Dimensión de lotes de peces sembrados
+--  Fuente: staging.stg_lote
+-- ============================================================
+
+WITH stg AS (
+    SELECT * FROM "aqua_dw"."dm_staging"."stg_lote"
+)
+
+SELECT
+    ROW_NUMBER() OVER (ORDER BY id_lote)    AS sk_lote,
+    id_lote,
+    nombre_lote,
+    especie,
+    etapa,
+    fecha_ingreso,
+    poblacion_inicial,
+    proveedor
+FROM stg
+  );
+  
+[0m06:55:02.174647 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_registro_diario"
+[0m06:55:02.181111 [debug] [Thread-3 (]: On model.aqua_bi.stg_registro_diario: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.stg_registro_diario"} */
+alter table "aqua_dw"."dm_staging"."stg_registro_diario__dbt_tmp" rename to "stg_registro_diario"
+[0m06:55:02.188080 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m06:55:02.192132 [debug] [Thread-3 (]: On model.aqua_bi.stg_registro_diario: COMMIT
+[0m06:55:02.194148 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_registro_diario"
+[0m06:55:02.196093 [debug] [Thread-3 (]: On model.aqua_bi.stg_registro_diario: COMMIT
+[0m06:55:02.205432 [debug] [Thread-3 (]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:02.206343 [debug] [Thread-1 (]: SQL status: SELECT 0 in 0.0 seconds
+[0m06:55:02.213615 [debug] [Thread-2 (]: SQL status: SELECT 0 in 0.0 seconds
+[0m06:55:02.214117 [debug] [Thread-3 (]: Applying DROP to: "aqua_dw"."dm_staging"."stg_registro_diario__dbt_backup"
+[0m06:55:02.221945 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_lote"
+[0m06:55:02.228505 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_poza"
+[0m06:55:02.231926 [debug] [Thread-3 (]: Using postgres connection "model.aqua_bi.stg_registro_diario"
+[0m06:55:02.234652 [debug] [Thread-1 (]: On model.aqua_bi.dim_lote: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_lote"} */
+alter table "aqua_dw"."dm_dm"."dim_lote__dbt_tmp" rename to "dim_lote"
+[0m06:55:02.237232 [debug] [Thread-2 (]: On model.aqua_bi.dim_poza: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_poza"} */
+alter table "aqua_dw"."dm_dm"."dim_poza__dbt_tmp" rename to "dim_poza"
+[0m06:55:02.239887 [debug] [Thread-3 (]: On model.aqua_bi.stg_registro_diario: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.stg_registro_diario"} */
+drop view if exists "aqua_dw"."dm_staging"."stg_registro_diario__dbt_backup" cascade
+[0m06:55:02.246199 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m06:55:02.247902 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m06:55:02.253667 [debug] [Thread-1 (]: On model.aqua_bi.dim_lote: COMMIT
+[0m06:55:02.254404 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m06:55:02.259157 [debug] [Thread-2 (]: On model.aqua_bi.dim_poza: COMMIT
+[0m06:55:02.261933 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_lote"
+[0m06:55:02.266593 [debug] [Thread-3 (]: Timing info for model.aqua_bi.stg_registro_diario (execute): 06:55:02.066405 => 06:55:02.266273
+[0m06:55:02.269357 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_poza"
+[0m06:55:02.272099 [debug] [Thread-1 (]: On model.aqua_bi.dim_lote: COMMIT
+[0m06:55:02.274989 [debug] [Thread-3 (]: On model.aqua_bi.stg_registro_diario: Close
+[0m06:55:02.277728 [debug] [Thread-2 (]: On model.aqua_bi.dim_poza: COMMIT
+[0m06:55:02.284513 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86ad95e50>]}
+[0m06:55:02.285414 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:02.289912 [info ] [Thread-3 (]: 5 of 8 OK created sql view model dm_staging.stg_registro_diario ................ [[32mCREATE VIEW[0m in 0.28s]
+[0m06:55:02.290893 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:02.297815 [debug] [Thread-1 (]: Applying DROP to: "aqua_dw"."dm_dm"."dim_lote__dbt_backup"
+[0m06:55:02.300950 [debug] [Thread-3 (]: Finished running node model.aqua_bi.stg_registro_diario
+[0m06:55:02.307261 [debug] [Thread-2 (]: Applying DROP to: "aqua_dw"."dm_dm"."dim_poza__dbt_backup"
+[0m06:55:02.311250 [debug] [Thread-1 (]: Using postgres connection "model.aqua_bi.dim_lote"
+[0m06:55:02.317775 [debug] [Thread-2 (]: Using postgres connection "model.aqua_bi.dim_poza"
+[0m06:55:02.320712 [debug] [Thread-1 (]: On model.aqua_bi.dim_lote: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_lote"} */
+drop table if exists "aqua_dw"."dm_dm"."dim_lote__dbt_backup" cascade
+[0m06:55:02.323542 [debug] [Thread-2 (]: On model.aqua_bi.dim_poza: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.dim_poza"} */
+drop table if exists "aqua_dw"."dm_dm"."dim_poza__dbt_backup" cascade
+[0m06:55:02.329572 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m06:55:02.334322 [debug] [Thread-1 (]: Timing info for model.aqua_bi.dim_lote (execute): 06:55:02.087960 => 06:55:02.334006
+[0m06:55:02.334890 [debug] [Thread-2 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m06:55:02.337062 [debug] [Thread-1 (]: On model.aqua_bi.dim_lote: Close
+[0m06:55:02.341735 [debug] [Thread-2 (]: Timing info for model.aqua_bi.dim_poza (execute): 06:55:02.073835 => 06:55:02.341419
+[0m06:55:02.345740 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86d5b97d0>]}
+[0m06:55:02.347814 [debug] [Thread-2 (]: On model.aqua_bi.dim_poza: Close
+[0m06:55:02.350961 [info ] [Thread-1 (]: 6 of 8 OK created sql table model dm_dm.dim_lote ............................... [[32mSELECT 0[0m in 0.33s]
+[0m06:55:02.355007 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86b1d6b90>]}
+[0m06:55:02.357337 [debug] [Thread-1 (]: Finished running node model.aqua_bi.dim_lote
+[0m06:55:02.361408 [info ] [Thread-2 (]: 7 of 8 OK created sql table model dm_dm.dim_poza ............................... [[32mSELECT 0[0m in 0.34s]
+[0m06:55:02.367721 [debug] [Thread-2 (]: Finished running node model.aqua_bi.dim_poza
+[0m06:55:02.372368 [debug] [Thread-4 (]: Began running node model.aqua_bi.h_registro_diario
+[0m06:55:02.375853 [info ] [Thread-4 (]: 8 of 8 START sql table model dm_dm.h_registro_diario ........................... [RUN]
+[0m06:55:02.380137 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.aqua_bi.stg_poza, now model.aqua_bi.h_registro_diario)
+[0m06:55:02.383061 [debug] [Thread-4 (]: Began compiling node model.aqua_bi.h_registro_diario
+[0m06:55:02.395539 [debug] [Thread-4 (]: Writing injected SQL for node "model.aqua_bi.h_registro_diario"
+[0m06:55:02.418083 [debug] [Thread-4 (]: Timing info for model.aqua_bi.h_registro_diario (compile): 06:55:02.385637 => 06:55:02.417640
+[0m06:55:02.421026 [debug] [Thread-4 (]: Began executing node model.aqua_bi.h_registro_diario
+[0m06:55:02.430605 [debug] [Thread-4 (]: Writing runtime sql for node "model.aqua_bi.h_registro_diario"
+[0m06:55:02.453137 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.h_registro_diario"
+[0m06:55:02.456167 [debug] [Thread-4 (]: On model.aqua_bi.h_registro_diario: BEGIN
+[0m06:55:02.459437 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m06:55:02.492337 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:02.495203 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.h_registro_diario"
+[0m06:55:02.497987 [debug] [Thread-4 (]: On model.aqua_bi.h_registro_diario: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.h_registro_diario"} */
+
+  
+    
+
+  create  table "aqua_dw"."dm_dm"."h_registro_diario__dbt_tmp"
+  
+  
+    as
+  
+  (
+    -- ============================================================
+--  dm.h_registro_diario
+--  Tabla de hechos principal
+--  Granularidad: día × poza × lote
+--  Fuentes: stg_registro_diario + dims
+-- ============================================================
+
+WITH registro AS (
+    SELECT * FROM "aqua_dw"."dm_staging"."stg_registro_diario"
+),
+
+dim_p AS (
+    SELECT * FROM "aqua_dw"."dm_dm"."dim_poza"
+),
+
+dim_l AS (
+    SELECT * FROM "aqua_dw"."dm_dm"."dim_lote"
+),
+
+dim_t AS (
+    SELECT * FROM "aqua_dw"."dm_dm"."dim_tiempo"
+),
+
+dim_c AS (
+    SELECT * FROM "aqua_dw"."dm_dm"."dim_condicion"
+),
+
+hechos AS (
+
+    SELECT
+        -- Claves foráneas a dimensiones
+        t.sk_fecha,
+        p.sk_poza,
+        l.sk_lote,
+        c.sk_condicion,
+
+        -- Métricas aditivas
+        r.kg_alimento,
+        r.cantidad_bajas,
+
+        -- Métrica semi-aditiva
+        r.temp_promedio,
+
+        -- Métrica calculada: tasa de mortalidad
+        ROUND(
+            r.cantidad_bajas::NUMERIC / NULLIF(l.poblacion_inicial, 0),
+            6
+        )                                       AS tasa_mortalidad
+
+    FROM registro r
+    JOIN dim_t t ON t.fecha    = r.fecha
+    JOIN dim_p p ON p.id_poza  = r.id_poza
+    JOIN dim_l l ON l.id_lote  = r.id_lote
+    JOIN dim_c c ON (
+        r.temp_promedio IS NOT NULL
+        AND r.temp_promedio >= c.temp_min
+        AND r.temp_promedio <  c.temp_max
+    )
+
+)
+
+SELECT * FROM hechos
+  );
+  
+[0m06:55:02.514921 [debug] [Thread-4 (]: SQL status: SELECT 0 in 0.0 seconds
+[0m06:55:02.521973 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.h_registro_diario"
+[0m06:55:02.524465 [debug] [Thread-4 (]: On model.aqua_bi.h_registro_diario: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.h_registro_diario"} */
+alter table "aqua_dw"."dm_dm"."h_registro_diario__dbt_tmp" rename to "h_registro_diario"
+[0m06:55:02.529886 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m06:55:02.534934 [debug] [Thread-4 (]: On model.aqua_bi.h_registro_diario: COMMIT
+[0m06:55:02.539422 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.h_registro_diario"
+[0m06:55:02.542012 [debug] [Thread-4 (]: On model.aqua_bi.h_registro_diario: COMMIT
+[0m06:55:02.548750 [debug] [Thread-4 (]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:02.555242 [debug] [Thread-4 (]: Applying DROP to: "aqua_dw"."dm_dm"."h_registro_diario__dbt_backup"
+[0m06:55:02.558537 [debug] [Thread-4 (]: Using postgres connection "model.aqua_bi.h_registro_diario"
+[0m06:55:02.560891 [debug] [Thread-4 (]: On model.aqua_bi.h_registro_diario: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "model.aqua_bi.h_registro_diario"} */
+drop table if exists "aqua_dw"."dm_dm"."h_registro_diario__dbt_backup" cascade
+[0m06:55:02.566340 [debug] [Thread-4 (]: SQL status: DROP TABLE in 0.0 seconds
+[0m06:55:02.570733 [debug] [Thread-4 (]: Timing info for model.aqua_bi.h_registro_diario (execute): 06:55:02.423531 => 06:55:02.570417
+[0m06:55:02.573383 [debug] [Thread-4 (]: On model.aqua_bi.h_registro_diario: Close
+[0m06:55:02.576875 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '1147fe06-ae74-450b-86b8-93c1a997a3a0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86b135c90>]}
+[0m06:55:02.580126 [info ] [Thread-4 (]: 8 of 8 OK created sql table model dm_dm.h_registro_diario ...................... [[32mSELECT 0[0m in 0.20s]
+[0m06:55:02.583907 [debug] [Thread-4 (]: Finished running node model.aqua_bi.h_registro_diario
+[0m06:55:02.589617 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:02.592213 [debug] [MainThread]: On master: BEGIN
+[0m06:55:02.594931 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m06:55:02.630189 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:02.633897 [debug] [MainThread]: On master: COMMIT
+[0m06:55:02.636642 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:02.639190 [debug] [MainThread]: On master: COMMIT
+[0m06:55:02.644496 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:02.647279 [debug] [MainThread]: On master: Close
+[0m06:55:02.650700 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:55:02.653156 [debug] [MainThread]: Connection 'model.aqua_bi.dim_lote' was properly closed.
+[0m06:55:02.655911 [debug] [MainThread]: Connection 'model.aqua_bi.dim_poza' was properly closed.
+[0m06:55:02.658519 [debug] [MainThread]: Connection 'model.aqua_bi.stg_registro_diario' was properly closed.
+[0m06:55:02.661018 [debug] [MainThread]: Connection 'model.aqua_bi.h_registro_diario' was properly closed.
+[0m06:55:02.663684 [info ] [MainThread]: 
+[0m06:55:02.666870 [info ] [MainThread]: Finished running 3 view models, 5 table models in 0 hours 0 minutes and 1.81 seconds (1.81s).
+[0m06:55:02.671902 [debug] [MainThread]: Command end result
+[0m06:55:02.721517 [info ] [MainThread]: 
+[0m06:55:02.724311 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m06:55:02.727394 [info ] [MainThread]: 
+[0m06:55:02.730865 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m06:55:02.734618 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 4.6884313, "process_user_time": 6.308117, "process_kernel_time": 0.472104, "process_mem_max_rss": "136116", "process_out_blocks": "3056", "process_in_blocks": "0"}
+[0m06:55:02.737306 [debug] [MainThread]: Command `dbt run` succeeded at 06:55:02.737040 after 4.69 seconds
+[0m06:55:02.739969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86c577cd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe86d946ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe872411250>]}
+[0m06:55:02.742623 [debug] [MainThread]: Flushing usage events
+[0m06:55:32.189524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3362ec8fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3363299890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3362eb54d0>]}
+
+
+============================== 06:55:32.204767 | 2e210f65-953a-4c11-aa49-a82089e7492c ==============================
+[0m06:55:32.204767 [info ] [MainThread]: Running with dbt=1.7.18
+[0m06:55:32.208651 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/app/logs', 'profiles_dir': '/usr/app', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt test', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m06:55:32.503729 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2e210f65-953a-4c11-aa49-a82089e7492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3362eb64d0>]}
+[0m06:55:32.601695 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2e210f65-953a-4c11-aa49-a82089e7492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f336212b5d0>]}
+[0m06:55:32.604975 [info ] [MainThread]: Registered adapter: postgres=1.7.18
+[0m06:55:32.631335 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m06:55:33.085198 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m06:55:33.087904 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m06:55:33.100542 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2e210f65-953a-4c11-aa49-a82089e7492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3362e4c0d0>]}
+[0m06:55:33.162261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2e210f65-953a-4c11-aa49-a82089e7492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f336218e8d0>]}
+[0m06:55:33.165044 [info ] [MainThread]: Found 8 models, 1 test, 3 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m06:55:33.167656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e210f65-953a-4c11-aa49-a82089e7492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3362f13b90>]}
+[0m06:55:33.172938 [info ] [MainThread]: 
+[0m06:55:33.176842 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m06:55:33.183153 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aqua_dw_dm_staging'
+[0m06:55:33.185206 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aqua_dw_dm_dm'
+[0m06:55:33.206288 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_staging"
+[0m06:55:33.209928 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_dm"
+[0m06:55:33.212608 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: BEGIN
+[0m06:55:33.215222 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: BEGIN
+[0m06:55:33.217831 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:55:33.220238 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m06:55:33.261898 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:33.262521 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:33.264574 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_dm"
+[0m06:55:33.267658 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_staging"
+[0m06:55:33.270589 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "list_aqua_dw_dm_dm"} */
+select
+      'aqua_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dm_dm'
+    union all
+    select
+      'aqua_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dm_dm'
+    union all
+    select
+      'aqua_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dm_dm'
+  
+[0m06:55:33.273707 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "list_aqua_dw_dm_staging"} */
+select
+      'aqua_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dm_staging'
+    union all
+    select
+      'aqua_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dm_staging'
+    union all
+    select
+      'aqua_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dm_staging'
+  
+[0m06:55:33.284881 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m06:55:33.285586 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m06:55:33.289515 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: ROLLBACK
+[0m06:55:33.294334 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: ROLLBACK
+[0m06:55:33.299833 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: Close
+[0m06:55:33.301843 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: Close
+[0m06:55:33.317132 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:33.319717 [debug] [MainThread]: On master: BEGIN
+[0m06:55:33.322516 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m06:55:33.357061 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:33.359726 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:33.362466 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m06:55:33.378047 [debug] [MainThread]: SQL status: SELECT 3 in 0.0 seconds
+[0m06:55:33.382369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e210f65-953a-4c11-aa49-a82089e7492c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3362f1b610>]}
+[0m06:55:33.385264 [debug] [MainThread]: On master: ROLLBACK
+[0m06:55:33.390848 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:33.393431 [debug] [MainThread]: On master: BEGIN
+[0m06:55:33.401041 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:33.403604 [debug] [MainThread]: On master: COMMIT
+[0m06:55:33.406447 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:33.409014 [debug] [MainThread]: On master: COMMIT
+[0m06:55:33.414526 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:33.417433 [debug] [MainThread]: On master: Close
+[0m06:55:33.420846 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m06:55:33.424055 [info ] [MainThread]: 
+[0m06:55:33.440457 [debug] [Thread-1 (]: Began running node test.aqua_bi.test_grain_h_registro_diario
+[0m06:55:33.443671 [info ] [Thread-1 (]: 1 of 1 START test test_grain_h_registro_diario ................................. [RUN]
+[0m06:55:33.447058 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aqua_dw_dm_staging, now test.aqua_bi.test_grain_h_registro_diario)
+[0m06:55:33.449772 [debug] [Thread-1 (]: Began compiling node test.aqua_bi.test_grain_h_registro_diario
+[0m06:55:33.465031 [debug] [Thread-1 (]: Writing injected SQL for node "test.aqua_bi.test_grain_h_registro_diario"
+[0m06:55:33.494846 [debug] [Thread-1 (]: Timing info for test.aqua_bi.test_grain_h_registro_diario (compile): 06:55:33.452153 => 06:55:33.494396
+[0m06:55:33.497703 [debug] [Thread-1 (]: Began executing node test.aqua_bi.test_grain_h_registro_diario
+[0m06:55:33.527997 [debug] [Thread-1 (]: Writing runtime sql for node "test.aqua_bi.test_grain_h_registro_diario"
+[0m06:55:33.556943 [debug] [Thread-1 (]: Using postgres connection "test.aqua_bi.test_grain_h_registro_diario"
+[0m06:55:33.559852 [debug] [Thread-1 (]: On test.aqua_bi.test_grain_h_registro_diario: BEGIN
+[0m06:55:33.562584 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m06:55:33.597763 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:33.600337 [debug] [Thread-1 (]: Using postgres connection "test.aqua_bi.test_grain_h_registro_diario"
+[0m06:55:33.603049 [debug] [Thread-1 (]: On test.aqua_bi.test_grain_h_registro_diario: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "test.aqua_bi.test_grain_h_registro_diario"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      -- ============================================================
+--  Test: sin duplicados en la tabla de hechos
+--  Granularidad: 1 fila por día × poza × lote
+--  Resultado esperado: 0 filas (sin duplicados)
+-- ============================================================
+
+SELECT
+    sk_fecha,
+    sk_poza,
+    sk_lote,
+    COUNT(*) AS repeticiones
+FROM "aqua_dw"."dm_dm"."h_registro_diario"
+GROUP BY sk_fecha, sk_poza, sk_lote
+HAVING COUNT(*) > 1
+      
+    ) dbt_internal_test
+[0m06:55:33.622285 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m06:55:33.628537 [debug] [Thread-1 (]: Timing info for test.aqua_bi.test_grain_h_registro_diario (execute): 06:55:33.500188 => 06:55:33.628060
+[0m06:55:33.631006 [debug] [Thread-1 (]: On test.aqua_bi.test_grain_h_registro_diario: ROLLBACK
+[0m06:55:33.635863 [debug] [Thread-1 (]: On test.aqua_bi.test_grain_h_registro_diario: Close
+[0m06:55:33.639563 [info ] [Thread-1 (]: 1 of 1 PASS test_grain_h_registro_diario ....................................... [[32mPASS[0m in 0.19s]
+[0m06:55:33.642851 [debug] [Thread-1 (]: Finished running node test.aqua_bi.test_grain_h_registro_diario
+[0m06:55:33.648431 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:33.651276 [debug] [MainThread]: On master: BEGIN
+[0m06:55:33.653924 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m06:55:33.692525 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m06:55:33.695475 [debug] [MainThread]: On master: COMMIT
+[0m06:55:33.698126 [debug] [MainThread]: Using postgres connection "master"
+[0m06:55:33.700815 [debug] [MainThread]: On master: COMMIT
+[0m06:55:33.705948 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m06:55:33.708658 [debug] [MainThread]: On master: Close
+[0m06:55:33.711864 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m06:55:33.714521 [debug] [MainThread]: Connection 'test.aqua_bi.test_grain_h_registro_diario' was properly closed.
+[0m06:55:33.717618 [debug] [MainThread]: Connection 'list_aqua_dw_dm_dm' was properly closed.
+[0m06:55:33.720295 [info ] [MainThread]: 
+[0m06:55:33.723229 [info ] [MainThread]: Finished running 1 test in 0 hours 0 minutes and 0.54 seconds (0.54s).
+[0m06:55:33.727021 [debug] [MainThread]: Command end result
+[0m06:55:33.773339 [info ] [MainThread]: 
+[0m06:55:33.776146 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m06:55:33.778927 [info ] [MainThread]: 
+[0m06:55:33.781611 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m06:55:33.785709 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 1.7268066, "process_user_time": 3.926736, "process_kernel_time": 0.45729, "process_mem_max_rss": "124684", "process_out_blocks": "3056", "process_in_blocks": "0"}
+[0m06:55:33.788720 [debug] [MainThread]: Command `dbt test` succeeded at 06:55:33.788362 after 1.73 seconds
+[0m06:55:33.791711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f336365fa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33642af890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33635ff250>]}
+[0m06:55:33.794936 [debug] [MainThread]: Flushing usage events
