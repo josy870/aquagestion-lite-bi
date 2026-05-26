@@ -1245,3 +1245,234 @@ HAVING COUNT(*) > 1
 [0m06:55:33.788720 [debug] [MainThread]: Command `dbt test` succeeded at 06:55:33.788362 after 1.73 seconds
 [0m06:55:33.791711 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f336365fa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33642af890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f33635ff250>]}
 [0m06:55:33.794936 [debug] [MainThread]: Flushing usage events
+[0m12:21:55.478141 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61c043af50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61c0582890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61c05801d0>]}
+
+
+============================== 12:21:55.491381 | 415ec257-52a9-4d13-a0a0-72a659281864 ==============================
+[0m12:21:55.491381 [info ] [MainThread]: Running with dbt=1.7.18
+[0m12:21:55.495524 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/usr/app/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt test', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:21:55.909699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '415ec257-52a9-4d13-a0a0-72a659281864', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61c03161d0>]}
+[0m12:21:56.019011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '415ec257-52a9-4d13-a0a0-72a659281864', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61c0387650>]}
+[0m12:21:56.024159 [info ] [MainThread]: Registered adapter: postgres=1.7.18
+[0m12:21:56.056604 [debug] [MainThread]: checksum: 7ef98830ab3f0215d011ffa635e2417c6313d5b77f40f33d534bad4eb8784f08, vars: {}, profile: , target: , version: 1.7.18
+[0m12:21:56.414370 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m12:21:56.417029 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m12:21:56.430308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '415ec257-52a9-4d13-a0a0-72a659281864', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61befc6950>]}
+[0m12:21:56.485656 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '415ec257-52a9-4d13-a0a0-72a659281864', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61bf3b2e50>]}
+[0m12:21:56.488121 [info ] [MainThread]: Found 8 models, 1 test, 3 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m12:21:56.491180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '415ec257-52a9-4d13-a0a0-72a659281864', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61bf303d50>]}
+[0m12:21:56.496365 [info ] [MainThread]: 
+[0m12:21:56.499992 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m12:21:56.508962 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aqua_dw_dm_staging'
+[0m12:21:56.511371 [debug] [ThreadPool]: Acquiring new postgres connection 'list_aqua_dw_dm_dm'
+[0m12:21:56.527756 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_staging"
+[0m12:21:56.530807 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_dm"
+[0m12:21:56.533854 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: BEGIN
+[0m12:21:56.536656 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: BEGIN
+[0m12:21:56.539382 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:21:56.541986 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m12:21:56.740826 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m12:21:56.742011 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m12:21:56.745431 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_dm"
+[0m12:21:56.749888 [debug] [ThreadPool]: Using postgres connection "list_aqua_dw_dm_staging"
+[0m12:21:56.754360 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "list_aqua_dw_dm_dm"} */
+select
+      'aqua_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dm_dm'
+    union all
+    select
+      'aqua_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dm_dm'
+    union all
+    select
+      'aqua_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dm_dm'
+  
+[0m12:21:56.759575 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "list_aqua_dw_dm_staging"} */
+select
+      'aqua_dw' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dm_staging'
+    union all
+    select
+      'aqua_dw' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dm_staging'
+    union all
+    select
+      'aqua_dw' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dm_staging'
+  
+[0m12:21:56.789404 [debug] [ThreadPool]: SQL status: SELECT 3 in 0.0 seconds
+[0m12:21:56.790465 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m12:21:56.797451 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: ROLLBACK
+[0m12:21:56.805582 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: ROLLBACK
+[0m12:21:56.814798 [debug] [ThreadPool]: On list_aqua_dw_dm_staging: Close
+[0m12:21:56.817996 [debug] [ThreadPool]: On list_aqua_dw_dm_dm: Close
+[0m12:21:56.842435 [debug] [MainThread]: Using postgres connection "master"
+[0m12:21:56.847248 [debug] [MainThread]: On master: BEGIN
+[0m12:21:56.851494 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:21:56.911482 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m12:21:56.916029 [debug] [MainThread]: Using postgres connection "master"
+[0m12:21:56.921073 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m12:21:56.972263 [debug] [MainThread]: SQL status: SELECT 3 in 0.0 seconds
+[0m12:21:56.980174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '415ec257-52a9-4d13-a0a0-72a659281864', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61c044ed10>]}
+[0m12:21:56.984849 [debug] [MainThread]: On master: ROLLBACK
+[0m12:21:56.993907 [debug] [MainThread]: Using postgres connection "master"
+[0m12:21:56.998258 [debug] [MainThread]: On master: BEGIN
+[0m12:21:57.011843 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m12:21:57.016380 [debug] [MainThread]: On master: COMMIT
+[0m12:21:57.020679 [debug] [MainThread]: Using postgres connection "master"
+[0m12:21:57.025859 [debug] [MainThread]: On master: COMMIT
+[0m12:21:57.034478 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m12:21:57.039541 [debug] [MainThread]: On master: Close
+[0m12:21:57.046078 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m12:21:57.052484 [info ] [MainThread]: 
+[0m12:21:57.107871 [debug] [Thread-1 (]: Began running node test.aqua_bi.test_grain_h_registro_diario
+[0m12:21:57.113060 [info ] [Thread-1 (]: 1 of 1 START test test_grain_h_registro_diario ................................. [RUN]
+[0m12:21:57.120205 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_aqua_dw_dm_staging, now test.aqua_bi.test_grain_h_registro_diario)
+[0m12:21:57.125390 [debug] [Thread-1 (]: Began compiling node test.aqua_bi.test_grain_h_registro_diario
+[0m12:21:57.157495 [debug] [Thread-1 (]: Writing injected SQL for node "test.aqua_bi.test_grain_h_registro_diario"
+[0m12:21:57.178816 [debug] [Thread-1 (]: Timing info for test.aqua_bi.test_grain_h_registro_diario (compile): 12:21:57.130354 => 12:21:57.178320
+[0m12:21:57.181965 [debug] [Thread-1 (]: Began executing node test.aqua_bi.test_grain_h_registro_diario
+[0m12:21:57.224414 [debug] [Thread-1 (]: Writing runtime sql for node "test.aqua_bi.test_grain_h_registro_diario"
+[0m12:21:57.242092 [debug] [Thread-1 (]: Using postgres connection "test.aqua_bi.test_grain_h_registro_diario"
+[0m12:21:57.244430 [debug] [Thread-1 (]: On test.aqua_bi.test_grain_h_registro_diario: BEGIN
+[0m12:21:57.246915 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m12:21:57.279470 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m12:21:57.282360 [debug] [Thread-1 (]: Using postgres connection "test.aqua_bi.test_grain_h_registro_diario"
+[0m12:21:57.285196 [debug] [Thread-1 (]: On test.aqua_bi.test_grain_h_registro_diario: /* {"app": "dbt", "dbt_version": "1.7.18", "profile_name": "aqua_bi", "target_name": "dev", "node_id": "test.aqua_bi.test_grain_h_registro_diario"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      -- ============================================================
+--  Test: sin duplicados en la tabla de hechos
+--  Granularidad: 1 fila por día × poza × lote
+--  Resultado esperado: 0 filas (sin duplicados)
+-- ============================================================
+
+SELECT
+    sk_fecha,
+    sk_poza,
+    sk_lote,
+    COUNT(*) AS repeticiones
+FROM "aqua_dw"."dm_dm"."h_registro_diario"
+GROUP BY sk_fecha, sk_poza, sk_lote
+HAVING COUNT(*) > 1
+      
+    ) dbt_internal_test
+[0m12:21:57.293848 [debug] [Thread-1 (]: SQL status: SELECT 1 in 0.0 seconds
+[0m12:21:57.299156 [debug] [Thread-1 (]: Timing info for test.aqua_bi.test_grain_h_registro_diario (execute): 12:21:57.184757 => 12:21:57.298764
+[0m12:21:57.301730 [debug] [Thread-1 (]: On test.aqua_bi.test_grain_h_registro_diario: ROLLBACK
+[0m12:21:57.306756 [debug] [Thread-1 (]: On test.aqua_bi.test_grain_h_registro_diario: Close
+[0m12:21:57.310501 [info ] [Thread-1 (]: 1 of 1 PASS test_grain_h_registro_diario ....................................... [[32mPASS[0m in 0.19s]
+[0m12:21:57.314252 [debug] [Thread-1 (]: Finished running node test.aqua_bi.test_grain_h_registro_diario
+[0m12:21:57.321026 [debug] [MainThread]: Using postgres connection "master"
+[0m12:21:57.323935 [debug] [MainThread]: On master: BEGIN
+[0m12:21:57.326430 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m12:21:57.360821 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m12:21:57.363591 [debug] [MainThread]: On master: COMMIT
+[0m12:21:57.366425 [debug] [MainThread]: Using postgres connection "master"
+[0m12:21:57.369380 [debug] [MainThread]: On master: COMMIT
+[0m12:21:57.374688 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m12:21:57.377234 [debug] [MainThread]: On master: Close
+[0m12:21:57.380408 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m12:21:57.382982 [debug] [MainThread]: Connection 'test.aqua_bi.test_grain_h_registro_diario' was properly closed.
+[0m12:21:57.385448 [debug] [MainThread]: Connection 'list_aqua_dw_dm_dm' was properly closed.
+[0m12:21:57.387521 [info ] [MainThread]: 
+[0m12:21:57.389817 [info ] [MainThread]: Finished running 1 test in 0 hours 0 minutes and 0.89 seconds (0.89s).
+[0m12:21:57.393299 [debug] [MainThread]: Command end result
+[0m12:21:57.435158 [info ] [MainThread]: 
+[0m12:21:57.438019 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m12:21:57.442606 [info ] [MainThread]: 
+[0m12:21:57.446351 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m12:21:57.450489 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": true, "command_wall_clock_time": 2.0724773, "process_user_time": 4.873713, "process_kernel_time": 2.406895, "process_mem_max_rss": "125808", "process_in_blocks": "16", "process_out_blocks": "3056"}
+[0m12:21:57.453040 [debug] [MainThread]: Command `dbt test` succeeded at 12:21:57.452786 after 2.08 seconds
+[0m12:21:57.455749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61c50ca7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61c5204510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f61c5204fd0>]}
+[0m12:21:57.458425 [debug] [MainThread]: Flushing usage events
