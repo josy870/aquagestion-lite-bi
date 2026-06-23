@@ -1,0 +1,20 @@
+/* Paleta "Titicaca" — ajusta el verde de marca de Material */
+:root {
+  --md-primary-fg-color:        #1B7A5A;
+  --md-primary-fg-color--light: #2C8F6E;
+  --md-primary-fg-color--dark:  #0F4D38;
+  --md-accent-fg-color:         #5FBF9F;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #1B7A5A;
+  --md-accent-fg-color:         #8FD9BE;
+}
+
+/* Encabezado un poco más sobrio */
+.md-typeset h1 { font-weight: 700; }
+
+/* Tarjetas de la página de inicio */
+.grid.cards > ul > li {
+  border-radius: 10px;
+}

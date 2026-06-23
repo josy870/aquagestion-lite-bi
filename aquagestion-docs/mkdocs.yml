@@ -1,0 +1,77 @@
+site_name: AquaGestión Lite BI
+site_description: >-
+  Guías para construir una solución de Business Intelligence end-to-end
+  para el monitoreo productivo de una piscigranja de truchas en la cuenca
+  del Lago Titicaca (Puno).
+site_author: "[tu nombre]"
+
+# Cambia esta URL por la de tu repositorio real.
+repo_url: https://github.com/tu-usuario/aquagestion-lite-bi
+repo_name: aquagestion-lite-bi
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: green
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: green
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+  - Arquitectura: arquitectura.md
+  - Configuración del entorno: setup-entorno.md
+  - Guías de construcción:
+      - guias/index.md
+      - 1. OLTP (PostgreSQL 17): guias/01-oltp-postgres.md
+      - 2. Ingesta (postgres_fdw): guias/02-ingesta-fdw.md
+      - 3. Data Warehouse (Docker): guias/03-data-warehouse.md
+      - 4. Transformación (dbt): guias/04-dbt.md
+      - 5. Modelo dimensional: guias/05-modelo-dimensional.md
+      - 6. Power BI: guias/06-powerbi.md
+      - 7. Validación de KPIs: guias/07-validacion.md
