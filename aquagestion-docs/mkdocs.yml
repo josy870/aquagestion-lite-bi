@@ -3,7 +3,7 @@ site_description: >-
   Guías para construir una solución de Business Intelligence end-to-end
   para el monitoreo productivo de una piscigranja de truchas en la cuenca
   del Lago Titicaca (Puno).
-site_author: "[tu nombre]"
+site_author: "Joselyn Milagros Yucra Mamani"
 
 # Cambia esta URL por la de tu repositorio real.
 repo_url: https://github.com/josy870/aquagestion-lite-bi.git
