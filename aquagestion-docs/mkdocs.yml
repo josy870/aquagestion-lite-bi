@@ -6,7 +6,7 @@ site_description: >-
 site_author: "[tu nombre]"
 
 # Cambia esta URL por la de tu repositorio real.
-repo_url: https://github.com/tu-usuario/aquagestion-lite-bi
+repo_url: https://github.com/josy870/aquagestion-lite-bi.git
 repo_name: aquagestion-lite-bi
 edit_uri: edit/main/docs/
 
